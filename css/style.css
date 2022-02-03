@@ -1,0 +1,36 @@
+body{
+margin:0;
+padding:0;
+box-sizing: border-box;
+border-radius: 10px 10px 10px 10px;
+
+}
+.image {
+    width: 200px;
+    /* max-width: 250%; */
+    height: 300px;
+  
+}
+.image img {
+    width: 280px;
+    max-width: 250%;
+    height: 350px;
+    border-radius: 5px;
+}
+
+   .container {
+        position: relative;
+      }
+
+.text-block {
+    position: absolute;
+    right: 1115px;
+    background-color: black;
+    color: white;
+    left: 2%;
+    text-align: center;
+    border-radius: 5px;
+    padding-left: 20px;
+    }
+
+
