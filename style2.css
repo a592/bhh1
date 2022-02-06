@@ -1,0 +1,59 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  #mosaic_wrapper {
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    background: url('https://image.freepik.com/free-photo/laser-epilation-hair-removal-therapy_1303-23661.jpg?w=740')
+    no-repeat center center fixed;
+    background-size: cover;
+  }
+  
+  #mosaic_wrapper .panel {
+    flex: 0 0 calc(100% / 4);
+      max-width: calc(100% / 4);
+    height: 90vh;
+    
+    border-right: 1px solid rgba(255,255,255,0.2);
+    overflow: hidden;
+  }
+  
+  #mosaic_wrapper .panel:hover {
+    background-color: rgba(0,0,0,0.1);
+  }
+  
+  .info {
+    padding: 50px 0 60px 0;
+    background-color: #18162B;
+    transform: translateY(-110px);
+    transition: all 0.4s;
+  }
+  
+  #mosaic_wrapper .panel:hover .info {
+    transform: translateY(0px);
+  }
+  
+  .info-title {
+    color: #fff;
+    text-align: center;
+    font-family: lato, sans-serif;
+    font-size: 30px;
+    margin-top: -60px;
+    position: relative;
+    z-index: 2;
+  }
+  
+  @media screen and (max-width: 768px) {
+    #mosaic_wrapper {
+      display: grid;
+      grid-template-columns: auto auto;
+    }
+  
+    #mosaic_wrapper .panel {
+      height: 40vh;
+      max-width: unset;
+    }
+  }
