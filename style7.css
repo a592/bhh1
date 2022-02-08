@@ -1,0 +1,96 @@
+*{
+    margin:0;
+    padding:0;
+    
+}
+.container {
+   
+    width: 100%;
+    height:100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+    
+}
+
+.card{
+    width: 350px;
+    height: 350px;
+    margin:auto;
+    perspective:1000px;
+    cursor:pointer;
+   
+
+}
+.innerbox{
+    position: relative;
+    width: 90%;
+    height: 90%;
+    text-align: center;
+    border-radius: 30px;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+   
+}
+.card-front,.card-back
+{
+    position: absolute;
+    width:  90%;
+    height: 90%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+.card-front{
+   
+background-position: center;
+background-size: cover;
+}
+
+.front-1{
+    background-image:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),
+    url(https://image.freepik.com/free-photo/view-from-beautiful-woman-enjoying-cosmetology-procedures-rejuvenation-beauty-salon-dermatology-doctor-work-healthcare-therapy-botox_197531-2784.jpg?w=1380) ;
+
+}
+.front-2{
+    background-image:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),
+    url(https://image.freepik.com/free-photo/charming-relaxed-gentle-young-woman-making-cosmetological-procedure-applying-facial-cream-face-with-fingers-smiling-broadly-feeling-perfect-taking-care-skin_176420-24010.jpg?w=1380) ;
+
+}
+.front-3{
+    background-image:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),
+    url(https://image.freepik.com/free-photo/beauty-skincare-attractive-young-woman-with-happy-smile-short-curly-hair-white-teeth-touching-hairstyle-smiling-cheerful-camera-standing-white-background_176420-46416.jpg?w=1380) ;
+
+
+}
+span{
+    display: inline-block;
+    width: 100px;
+    padding: 14px 0;
+    margin-top: 160px;
+    border-radius: 4px;
+    background: #fff;
+    color: black;
+}
+.card-back{
+   background: rgb(4, 4, 66);
+    transform: rotateX(180deg);
+
+}
+.card:hover .innerbox{
+    transform: rotateX(-180deg);
+
+}
+.card:hover span{
+    transform:translateY(140px) ;
+}
+p{
+    display: inline-block;
+    color: #fff;
+    font-family: lato, sans-serif;
+    padding-bottom: 10px;
+    border-bottom: 1px solid white;
+    margin-top: 140px;
+}
+  
